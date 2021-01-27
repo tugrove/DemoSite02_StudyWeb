@@ -1,0 +1,39 @@
+/* stylesheet for DemoSite02_StudyWeb */
+
+/* global settings */
+/* ============================================ */
+
+/* charset */
+@charset "UTF-8";
+
+/* import font-family */
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+/* basic settings */
+body {
+    font-size: inherit;
+    font-family: sans-serif;
+    color: rgb(71, 49, 17);
+}
+
+/* link */
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+a:hover {
+    color: rgb(0, 187, 221)
+}
+
+/* clear fix */
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* img */
+img {
+    max-width: 100%;
+    display: block;
+}
