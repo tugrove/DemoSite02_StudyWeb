@@ -51,6 +51,12 @@ img {
 /* -------------------------------------------- */
 
 /* site logo */
+#pageHead .siteLogo {
+    width: 13em;
+    height: auto;
+    margin: 0 auto;
+    padding: 1em 0;
+}
 
 /* global navi */
 #pageHead .globalNavi ul {
