@@ -171,3 +171,28 @@ img {
     padding-top: .1em;
     font-size: .95em;
 }
+
+/* cyan line section */
+/* -------------------------------------------- */
+
+#pageBody .cyanLine {
+    margin-bottom: 4em;
+    padding: 0 1em;
+}
+#pageBody .cyanLine p {
+    padding: 0 1em;
+}
+
+/* Heading */
+#pageBody .cyanLine .cyanLineHeading {
+    padding: 0 .77em .5em;
+    font-size: 1.3em;
+    font-weight: inherit;
+    border-bottom: solid 2px rgb(0, 187, 221);
+}
+
+/* categotyNavi */
+#pageBody .cyanLine .categoryNavi ul li {
+    padding: .5em 1em;
+    border-bottom: solid 1px rgb(230, 230, 230);
+}
