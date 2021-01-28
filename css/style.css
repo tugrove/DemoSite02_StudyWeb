@@ -25,6 +25,11 @@ a:hover {
     color: rgb(0, 187, 221)
 }
 
+/* list style */
+ul {
+    list-style: none;
+}
+
 /* clear fix */
 .clearfix:after {
     content: "";
@@ -36,4 +41,22 @@ a:hover {
 img {
     max-width: 100%;
     display: block;
+}
+
+
+/* page header */
+/* ============================================ */
+
+/* global head */
+/* -------------------------------------------- */
+
+/* site logo */
+
+/* global navi */
+#pageHead .globalNavi ul {
+    display: flex;
+    justify-content: center;
+}
+#pageHead .globalNavi ul li:not(:last-child) {
+    margin-right: 2em;
 }
