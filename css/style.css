@@ -94,11 +94,17 @@ img {
 /* page body */
 /* ============================================ */
 
+#pageBody {
+    margin-top: 3em;
+    background: rgb(255, 255, 255)
+}
+
 /* main column */
 /* -------------------------------------------- */
 
 /* article */
 #pageBody .mainColumn article {
+    margin-bottom: 5em;
     padding: 0 1em;
 }
 
@@ -108,17 +114,25 @@ img {
 #pageBody .mainColumn .articleTop {
     display: flex;
     flex-direction: row;
+    margin-bottom: 2em;
 }
 
 /* article title and category */
 #pageBody .mainColumn .articleTitAndCat {
     order: 2;
+    margin-left: .5em;
 }
 #pageBody .mainColumn .articleTitle {
+    padding-top: .3em;
+    font-size: 1.4em;
     font-family: serif;
+    font-weight: inherit;
 }
-
+#pageBody .mainColumn .articleCategory {
+    margin-top: .5em;
+}
 #pageBody .mainColumn .articleCategory * {
+    font-size: .95em;
     font-weight: inherit;
 }
 
@@ -135,11 +149,14 @@ img {
 #pageBody .mainColumn .articleDate > * {
     width: min-content;
     margin: 0 auto;
-    padding-top: .1em;
     color: rgb(255, 255, 255);
 }
 #pageBody .mainColumn .articleMMDD {
-    padding: .7em .3em .1em;
-    font-size: 1.2em;
+    padding: .7em .3em 0;
+    font-size: 1.1em;
     border-bottom: solid 1px rgb(255, 255, 255);
+}
+#pageBody .mainColumn .articleYYYY {
+    padding-top: .1em;
+    font-size: .95em;
 }
