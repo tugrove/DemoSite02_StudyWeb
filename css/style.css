@@ -13,6 +13,7 @@
 body {
     font-size: inherit;
     font-family: sans-serif;
+    line-height: 1.8;
     color: rgb(71, 49, 17);
 }
 
