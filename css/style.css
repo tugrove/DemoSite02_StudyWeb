@@ -47,6 +47,14 @@ img {
 /* page header */
 /* ============================================ */
 
+/* page head background */
+#pageHead {
+    background: 0% 0% / cover no-repeat;
+}
+#pageHead.page_news{
+    background-image: url(../images/news/news-bg.jpg);
+}
+
 /* global head */
 /* -------------------------------------------- */
 
