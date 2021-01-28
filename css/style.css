@@ -80,10 +80,10 @@ img {
 
 /* page title */
 #pageHead .pageTitle {
+    padding: 1em 0;
     font-size: 2.6em;
     font-family: 'Philosopher';
     font-weight: 400;
-    padding: 1em 0;
     text-align: center;
 }
 
@@ -127,13 +127,19 @@ img {
     order: 1;
     width: 5em;
     height: 5em;
+    min-width: 5em;
+    font-family: serif;
     background: rgb(0, 187, 221);
     border-radius: 50%;
 }
 #pageBody .mainColumn .articleDate > * {
-    text-align: center;
+    width: min-content;
+    margin: 0 auto;
+    padding-top: .1em;
     color: rgb(255, 255, 255);
 }
 #pageBody .mainColumn .articleMMDD {
+    padding: .7em .3em .1em;
+    font-size: 1.2em;
     border-bottom: solid 1px rgb(255, 255, 255);
 }
