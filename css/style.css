@@ -92,6 +92,17 @@ img {
 /* page footer */
 /* ============================================ */
 
+#pageFoot {
+    color: rgb(230, 230, 230);
+    background: rgb(71, 49, 17);
+}
+#pageFoot #copyright {
+    padding: 2em 0;
+    font-size: .8em;
+    text-align: center;
+}
+
+
 /* page body */
 /* ============================================ */
 
