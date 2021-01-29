@@ -1,0 +1,359 @@
+/* stylesheet for DemoSite02_StudyWeb */
+
+/* global settings */
+/* ============================================ */
+
+/* charset */
+@charset "UTF-8";
+
+/* import font-family */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Philosopher&family=Sarabun:wght@300;400;500;600;700&display=swap');
+
+/* basic settings */
+body {
+    font-size: inherit;
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.5;
+    color: rgb(71, 49, 17);
+}
+
+/* link */
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+a:hover {
+    color: rgb(0, 187, 221)
+}
+
+/* list style */
+ul {
+    list-style: none;
+}
+
+/* clear fix */
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* img */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* max width of max width */
+#pageHead,
+#pageBody,
+#pageFoot {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/* page header */
+/* ============================================ */
+
+/* page head background */
+#pageHeadWrap {
+    background: 0% 0% / cover no-repeat;
+}
+#pageHeadWrap.page_news{
+    background-image: url(../images/news/news-bg.jpg);
+}
+
+/* global head */
+/* -------------------------------------------- */
+
+/* site logo */
+#pageHead .siteLogo {
+    width: 13em;
+    height: auto;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+/* global navi */
+#pageHead .globalNavi ul {
+    display: flex;
+    justify-content: center;
+}
+#pageHead .globalNavi ul li {
+    font-size: 1.1em;
+}
+#pageHead .globalNavi ul li:not(:last-child) {
+    margin-right: 2em;
+}
+
+/* local head */
+/* -------------------------------------------- */
+
+/* page title */
+#pageHead .pageTitle {
+    padding: 1em 0;
+    font-size: 2.6em;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* horizontal arrangement of global head for wide screen */
+/* -------------------------------------------- */
+@media screen and (min-width: 700px) {
+
+    #pageHead .globalHead {
+        display: flex;
+        justify-content: space-between;
+    }
+    #pageHead .siteLogo {
+        margin: 0 0 0 1em;
+    }
+    #pageHead .globalNavi {
+        padding: 2em 1em 0 0;
+    }
+    #pageHead .globalNavi ul li {
+        font-size: 1.35em;
+    }
+}
+@media screen and (min-width: 1080px) {
+
+    #pageHead .siteLogo {
+        margin: 0;
+    }
+    #pageHead .globalNavi {
+        padding: 2em 0 0;
+    }
+}
+
+/* page title font-size for various width of screen */
+/* -------------------------------------------- */
+@media screen and (min-width: 500px) {
+
+    #pageHead .pageTitle {
+        padding: .6em 0;
+        font-size: 3.4em;
+    }
+}
+@media screen and (min-width: 700px) {
+
+    #pageHead .pageTitle {
+        padding: .2em 0 .9em;
+        font-size: 4.2em;
+    }
+}
+@media screen and (min-width: 900px) {
+
+    #pageHead .pageTitle {
+        padding: 0 0 .8em;
+        font-size: 5em;
+    }
+}
+
+
+/* page footer */
+/* ============================================ */
+
+#pageFootWrap {
+    color: rgb(230, 230, 230);
+    background: rgb(53, 37, 12);
+}
+#pageFoot #copyright {
+    padding: 1.8em 0;
+    text-align: center;
+}
+
+
+/* page body */
+/* ============================================ */
+
+#pageBodyWrap {
+    padding: 3em 0 0;
+    background: rgb(255, 255, 255)
+}
+
+/* side padding of contents for narrow screen */
+#pageBody main,
+#pageBody aside {
+    padding: 0 1em;
+}
+@media screen and (min-width: 1080px) {
+
+    #pageBody main,
+    #pageBody aside {
+        padding: 0;
+    }
+}
+
+/* p */
+#pageBody p {
+    margin: 1em 0;
+    line-height: 1.8;
+}
+
+/* article */
+#pageBody article {
+    margin: 0 auto 5em;
+    max-width: 36em;
+}
+
+/* article img */
+#pageBody article .articlePicture {
+    width: auto;
+    height: auto;
+    margin: 1.5em 0;
+}
+
+/* article top */
+/* -------------------------------------------- */
+
+#pageBody article .articleTop {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 1.5em;
+}
+
+/* article title and category */
+#pageBody article .articleTitAndCat {
+    order: 2;
+    margin: 0 0 0 .5em;
+}
+#pageBody article .articleTitle {
+    padding: .3em 0 0;
+    font-size: 1.4em;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+}
+#pageBody article .articleCategory {
+    margin: .5em 0 0;
+}
+#pageBody article .articleCategory * {
+    font-size: .95em;
+    font-weight: inherit;
+}
+
+/* article date */
+#pageBody article .articleDate {
+    order: 1;
+    width: 5em;
+    height: 5em;
+    min-width: 5em;
+    font-family: 'Noto Serif JP', serif;
+    background: rgb(0, 187, 221);
+    border-radius: 50%;
+}
+#pageBody article .articleDate > * {
+    width: min-content;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+}
+#pageBody article .articleMMDD {
+    padding: .7em .3em 0;
+    font-size: 1.1em;
+    border-bottom: solid 1px rgb(255, 255, 255);
+}
+#pageBody article .articleYYYY {
+    padding: .1em 0 0;
+    font-size: .95em;
+}
+
+/* large article top for wide screen */
+@media screen and (min-width: 500px) {
+
+    /* article date */
+    #pageBody article .articleDate {
+        width: 6.3em;
+        height: 6.3em;
+        min-width: 6.3em;
+    }
+    #pageBody article .articleMMDD {
+        padding: .5em 0 .2em;
+        font-size: 1.6em;
+    }
+    #pageBody article .articleYYYY {
+        padding: .4em 0 0;
+        font-size: .95em;
+    }
+}
+@media screen and (min-width: 700px) {
+
+    /* article title and category */
+    #pageBody article .articleTitAndCat {
+        margin: 0 0 0 1em;
+    }
+    #pageBody article .articleTitle {
+        padding: .2em 0 0 0;
+        font-size: 1.7em;
+    }
+    #pageBody article .articleCategory {
+        margin: .1em 0 1em;
+    }
+    #pageBody article .articleCategory * {
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 900px) {
+
+    /* article title */
+    #pageBody article .articleTitle {
+        font-size: 2em;
+    }
+}
+
+/* cyan section */
+/* -------------------------------------------- */
+
+.cyanSection.page_news {
+    margin: 0 0 4em;
+}
+
+/* Heading */
+#pageBody .cyanSection .cyanSectionHeading {
+    padding: 0 .46em .5em;
+    font-size: 1.3em;
+    font-weight: inherit;
+    border-bottom: solid 2px rgb(37, 211, 241);
+}
+
+/* p */
+#pageBody .cyanSection p {
+    padding: 0 .6em;
+}
+
+/* categotyNavi */
+#pageBody .cyanSection .categoryNavi ul li {
+    padding: .8em 1em;
+    border-bottom: solid 1px rgb(230, 230, 230);
+}
+
+/* cyan section width for wide screen */
+/* -------------------------------------------- */
+@media screen and (min-width: 550px) {
+
+    #pageBody .cyanSection {
+        max-width: 14em;
+        margin: 0 1em 4em;
+    }
+    #pageBody .cyanSection .cyanSectionHeading {
+        border-bottom: solid 3px rgb(37, 211, 241);
+    }
+    #pageBody .subColumnFlexbox.page_news {
+        display: flex;
+    }
+}
+
+/* 2 columns of news page for wide screen */
+/* -------------------------------------------- */
+@media screen and (min-width: 700px) {
+
+    #pageBody .pageBodyFlexbox.page_news {
+        display: flex;
+        justify-content: space-between;
+    }
+    #pageBody .subColumnFlexbox.page_news {
+        display: block;
+    }
+    .cyanSection.page_news {
+        margin: 0 0 4em;
+    }
+}
