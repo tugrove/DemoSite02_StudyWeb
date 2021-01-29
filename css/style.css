@@ -44,15 +44,22 @@ img {
     display: block;
 }
 
+/* max width of max width */
+#pageHead,
+#pageBody,
+#pageFoot {
+    max-width: 980px;
+    margin: 0 auto;
+}
 
 /* page header */
 /* ============================================ */
 
 /* page head background */
-#pageHead {
+#pageHeadWrap {
     background: 0% 0% / cover no-repeat;
 }
-#pageHead.page_news{
+#pageHeadWrap.page_news{
     background-image: url(../images/news/news-bg.jpg);
 }
 
@@ -92,7 +99,7 @@ img {
 /* page footer */
 /* ============================================ */
 
-#pageFoot {
+#pageFootWrap {
     color: rgb(230, 230, 230);
     background: rgb(71, 49, 17);
 }
@@ -106,7 +113,7 @@ img {
 /* page body */
 /* ============================================ */
 
-#pageBody {
+#pageBodyWrap {
     margin-top: 3em;
     background: rgb(255, 255, 255)
 }
