@@ -156,7 +156,7 @@ img {
 
 #pageFootWrap {
     color: rgb(230, 230, 230);
-    background: rgb(71, 49, 17);
+    background: rgb(53, 37, 12);
 }
 #pageFoot #copyright {
     padding: 1.8em 0;
@@ -312,7 +312,7 @@ img {
     padding: 0 .46em .5em;
     font-size: 1.3em;
     font-weight: inherit;
-    border-bottom: solid 2px rgb(0, 187, 221);
+    border-bottom: solid 2px rgb(37, 211, 241);
 }
 
 /* p */
@@ -335,7 +335,7 @@ img {
         margin: 0 1em 4em;
     }
     #pageBody .cyanSection .cyanSectionHeading {
-        border-bottom: solid 3px rgb(0, 187, 221);
+        border-bottom: solid 3px rgb(37, 211, 241);
     }
     #pageBody .subColumnFlexbox.page_news {
         display: flex;
