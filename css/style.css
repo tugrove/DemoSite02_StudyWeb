@@ -193,7 +193,7 @@ img {
 
 /* article */
 #pageBody article {
-    margin: 0 0 5em;
+    margin: 0 auto 5em;
     max-width: 36em;
 }
 
@@ -323,6 +323,7 @@ img {
 
     #pageBody .cyanSection {
         max-width: 14em;
+        margin: 0 1em 0;
     }
     #pageBody .cyanSection .cyanSectionHeading {
         border-bottom: solid 3px rgb(0, 187, 221);
@@ -342,5 +343,8 @@ img {
     }
     #pageBody .subColumnFlexbox.page_news {
         display: block;
+    }
+    #pageBody .cyanSection.page_news {
+        margin: 0;
     }
 }
