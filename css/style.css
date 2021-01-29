@@ -8,13 +8,11 @@
 
 /* import font-family */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Philosopher&family=Sarabun:wght@300;400;500;600;700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Noto+Sans+JP:wght@400;500&family=Philosopher&display=swap'); */
 
 /* basic settings */
 body {
     font-size: inherit;
     font-family: 'Sarabun', sans-serif;
-    /* font-family: 'IBM Plex Sans', sans-serif; */
     line-height: 1.5;
     color: rgb(71, 49, 17);
 }
@@ -152,8 +150,7 @@ img {
     background: rgb(71, 49, 17);
 }
 #pageFoot #copyright {
-    padding: 2em 0;
-    font-size: .8em;
+    padding: 1.8em 0;
     text-align: center;
 }
 
