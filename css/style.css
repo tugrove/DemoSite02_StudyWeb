@@ -54,10 +54,10 @@ img {
 .contentsSidePadding {
     padding: 0 1em;
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 980px) {
 
     .contentsSidePadding {
-        padding: 0;
+        padding: 0 max(0px, calc(1em - (100vw - 980px) / 2));
     }
 }
 
