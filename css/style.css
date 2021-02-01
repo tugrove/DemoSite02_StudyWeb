@@ -68,10 +68,17 @@ img {
 
 /* page head background */
 #pageHead {
-    background: 0% 0% / cover no-repeat;
+    background: center center / cover no-repeat;
 }
 #pageHead.page_news {
     background-image: url(../images/news/news-bg.jpg);
+    background-position: 0% 0%;
+}
+#pageHead.page_menu {
+    background-image: url(../images/menu/menu-bg.jpg);
+    background-color: rgb(180, 180, 180);
+    background-blend-mode: overlay;
+    height: 100vh;
 }
 
 /* global head */
@@ -101,11 +108,22 @@ img {
 
 /* page title */
 #pageHead .pageTitle {
-    padding: 1em 0;
     font-size: 2.6em;
     font-family: 'Philosopher', sans-serif;
     font-weight: 400;
     text-align: center;
+}
+#pageHead .pageTitle.page_news {
+    padding: 1em 0;
+}
+#pageHead .pageTitle.page_menu {
+    padding: 2em 0 1em;
+}
+
+/* p */
+#pageHead p {
+    font-size: 1.2em;
+    line-height: 1.8;
 }
 
 /* horizontal arrangement of global head for wide screen */
@@ -128,21 +146,21 @@ img {
 /* -------------------------------------------- */
 @media screen and (min-width: 500px) {
 
-    #pageHead .pageTitle {
+    #pageHead .pageTitle.page_news {
         padding: .6em 0;
         font-size: 3.4em;
     }
 }
 @media screen and (min-width: 700px) {
 
-    #pageHead .pageTitle {
+    #pageHead .pageTitle.page_news  {
         padding: .2em 0 .9em;
         font-size: 4.2em;
     }
 }
 @media screen and (min-width: 900px) {
 
-    #pageHead .pageTitle {
+    #pageHead .pageTitle.page_news {
         padding: 0 0 .8em;
         font-size: 5em;
     }
