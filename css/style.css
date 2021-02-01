@@ -112,7 +112,7 @@ img {
 /* -------------------------------------------- */
 @media screen and (min-width: 700px) {
 
-    #pageHead .globalHead {
+    #pageHead #globalHead {
         display: flex;
         justify-content: space-between;
     }
