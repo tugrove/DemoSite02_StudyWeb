@@ -23,9 +23,10 @@
 <body>
 <div id="page" class="page_news">
 
-    <div id="pageHeadWrap" class="page_news">
-        <header id="pageHead" class="page_news">
-            <div class="globalHead page_news">
+    <header id="pageHead" class="page_news">
+        <div class="contentsMaxWidth contentsSidePadding page_news">
+
+            <div id="globalHead" class="page_news">
                 <a href="./index.html#page"><img src="./images/common/logo.svg" width="426" height="148" alt="GFTD.CAFE" title="GFTD.CAFE トップページ" class="siteLogo page_news"></a>
                 <nav class="globalNavi page_news">
                     <ul>
@@ -35,16 +36,17 @@
                     </ul>
                 </nav>
             </div>
-            <div class="localHead page_news">
+            <div id="localHead" class="page_news">
                 <h1 class="pageTitle page_news">NEWS</h1>
             </div>
-        </header>
-    </div> <!-- /#pageBodyWrap -->
 
-    <div id="pageBodyWrap" class="page_news">
-        <div id="pageBody" class="page_news">
+        </div> <!-- /.contentsMaxWidth -->
+    </header> <!-- /#pageHead -->
+
+    <div id="pageBody" class="page_news">
+        <div class="contentsMaxWidth contentsSidePadding page_news">
             <div class="pageBodyFlexbox page_news">
-    
+
                 <main class="mainColumn page_news">
                     <article>
                         <div class="articleTop page_news">
@@ -57,10 +59,10 @@
                                     </tr>
                                 </table>
                             </div>
-                                <div class="articleDate page_news">
-                                    <div class="articleMMDD page_news"><time datetime="2019-04-01">4/01</time></div>
-                                    <div class="articleYYYY page_news">2019</div>
-                                </div>
+                            <div class="articleDate page_news">
+                                <div class="articleMMDD page_news"><time datetime="2019-04-01">4/01</time></div>
+                                <div class="articleYYYY page_news">2019</div>
+                            </div>
                         </div> <!-- /.articleTop -->
                         <img src="./images/news/wall.jpg" width="1600" height="1010" alt="" class="articlePicture page_news">
                         <p>
@@ -76,10 +78,11 @@
                             脳に刺激を与える食品を提供する、GFTD CAFE。
                         </p>
                     </article>
-                </main>
-        
+                </main> <!-- /.mainColumn -->
+
                 <aside class="subColumn page_news">
                     <div class="subColumnFlexbox page_news">
+
                         <section class="cyanSection page_news">
                             <h2 class="cyanSectionHeading page_news">カテゴリー</h2>
                             <nav class="categoryNavi page_news">
@@ -91,24 +94,26 @@
                                 </ul>
                             </nav>
                         </section>
+
                         <section class="cyanSection page_news">
                             <h2 class="cyanSectionHeading page_news">このお店について</h2>
                             <p>
                                 脳に刺激を与える食品を提供する、GFTD CAFE。刺激のある食材を利用したメニューが特徴です。苦いブレンドコーヒーと辛いジャンクフードで脳の内側から刺激されてください。
                             </p>
                         </section>
-                    </div> <!-- /.subColumnFlexbox -->
-                </aside>
-    
-            </div> <!-- /.pageBodyFlexbox -->
-        </div> <!-- /#pageBody-->
-    </div> <!-- /#pageBodyWrap -->
 
-    <div id="pageFootWrap" class="page_news">
-        <footer id="pageFoot" class="page_news">
+                    </div> <!-- /.subColumnFlexbox -->
+                </aside> <!-- /.sideColumn -->
+
+            </div> <!-- /.pageBodyFlexbox -->
+        </div> <!-- /.contentsMaxWidth -->
+    </div> <!-- /#pageBody -->
+
+    <footer id="pageFoot" class="page_news">
+        <div class="contentsMaxWidth contentsSidePadding page_news">
             <p id="copyright" class="page_news"><small>&copy; 2019 GFTD.WORKS</small></p>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
 </div> <!-- /#page -->
 </body>
