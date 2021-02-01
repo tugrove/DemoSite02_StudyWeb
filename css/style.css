@@ -41,6 +41,7 @@ ul {
 /* img */
 img {
     max-width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -79,7 +80,6 @@ img {
 /* site logo */
 #pageHead .siteLogo {
     width: 13em;
-    height: auto;
     margin: 0 auto;
     padding: 1em 0;
 }
@@ -185,7 +185,6 @@ img {
 /* article img */
 #pageBody article .articlePicture {
     width: auto;
-    height: auto;
     margin: 1.5em 0;
 }
 
