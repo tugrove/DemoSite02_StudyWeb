@@ -105,7 +105,7 @@ img {
 
 /* horizontal arrangement of global head for wide screen */
 /* -------------------------------------------- */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 550px) {
 
     #pageHead #globalHead {
         display: flex;
@@ -124,17 +124,16 @@ img {
 
 /* page title */
 #pageHead .pageTitle {
+    font-size: max(2.6em, 5.5vw);
     font-family: 'Philosopher', sans-serif;
     font-weight: 400;
     text-align: center;
 }
 #pageHead .pageTitle.page_news {
     padding: 1em 0 1.5em;
-    font-size: max(2.6em, 5.5vw);
 }
 #pageHead .pageTitle.page_menu {
-    padding: 10vh 0 2vh;
-    font-size: max(2.6em, 10vw);
+    padding: 15vh 0 2vh;
 }
 
 /* p */
@@ -147,10 +146,19 @@ img {
 
 /* page title padding for wide screen */
 /* -------------------------------------------- */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 550px) {
 
     #pageHead .pageTitle.page_news {
         padding: 0 0 .7em;
+    }
+}
+
+/* page title padding for short screen */
+/* -------------------------------------------- */
+@media screen and (max-height: 500px) {
+
+    #pageHead .pageTitle.page_menu {
+        padding: 0;
     }
 }
 
