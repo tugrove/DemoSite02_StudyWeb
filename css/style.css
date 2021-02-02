@@ -337,7 +337,7 @@ img {
     #pageBody .subColumnFlexbox.page_news {
         display: block;
     }
-    .cyanSection.page_news {
+    #pageBody .cyanSection.page_news {
         margin: 0 0 4em;
     }
 }
