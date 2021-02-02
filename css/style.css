@@ -124,7 +124,7 @@ img {
 
 /* page title */
 #pageHead .pageTitle {
-    font-size: max(2.6em, 5.5vw);
+    font-size: min(max(10vw, 2.6em), 5em);
     font-family: 'Philosopher', sans-serif;
     font-weight: 400;
     text-align: center;
