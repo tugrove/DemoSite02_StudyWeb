@@ -375,17 +375,24 @@ img {
 /* menu contents for wide screen */
 /* -------------------------------------------- */
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 500px) {
 
     #pageBody .gridContainer {
         margin: 4em 0 3em;
         display: grid;
         gap: 1.6em;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
     }
     #pageBody .menuContents {
         margin: 0;
+    }
+}
+@media screen and (min-width: 700px) {
+
+    #pageBody .gridContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
     }
     #pageBody .menuContents:first-child {
         grid-column: 1 / 3;
