@@ -334,7 +334,7 @@ img {
         max-width: 14em;
     }
     #pageBody .cyanSection .cyanSectionHeading {
-        border-bottom: solid 3px rgb(37, 211, 241);
+        border-bottom-width: 3px;
     }
     #pageBody .subColumnFlexbox {
         display: flex;
