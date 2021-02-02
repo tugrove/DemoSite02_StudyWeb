@@ -348,6 +348,7 @@ img {
     #pageBody .pageBodyFlexbox.page_news {
         display: flex;
         justify-content: space-between;
+        gap: 1.5em;
     }
     #pageBody .subColumnFlexbox {
         display: block;
