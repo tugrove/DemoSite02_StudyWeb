@@ -251,7 +251,8 @@ img {
     background: rgb(0, 187, 221);
     border-radius: 50%;
 }
-#pageBody article .articleDate > * {
+#pageBody article .articleMMDD,
+#pageBody article .articleYYYY {
     width: min-content;
     margin: 0 auto;
     color: rgb(255, 255, 255);
