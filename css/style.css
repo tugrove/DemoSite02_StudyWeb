@@ -29,7 +29,7 @@ a:focus {
 
 /* button 0 */
 .button00 {
-    display: inline-block;
+    display: block;
     padding: .8em 2em;
     font-size: 1.2em;
     color: rgb(230, 230, 230);
@@ -144,16 +144,17 @@ img {
 
 /* page title */
 #pageHead .pageTitle {
+    padding: 15vh 0 2vh;
     font-size: min(max(10vw, 2.6em), 5em);
     font-family: 'Philosopher', sans-serif;
     font-weight: 400;
     text-align: center;
 }
+#pageHead .pageTitle.page_index {
+    font-size: min(max(10vw, 1.5em), 5em);
+}
 #pageHead .pageTitle.page_news {
     padding: 1em 0 1.5em;
-}
-#pageHead .pageTitle.page_menu {
-    padding: 15vh 0 2vh;
 }
 
 /* p */
@@ -169,6 +170,11 @@ img {
     max-width: 24em;
 }
 
+/* button */
+#pageHead .button00.goToMenu {
+    margin: 1.8em auto;
+}
+
 /* page title padding for wide screen */
 /* -------------------------------------------- */
 @media screen and (min-width: 550px) {
@@ -182,6 +188,7 @@ img {
 /* -------------------------------------------- */
 @media screen and (max-height: 500px) {
 
+    #pageHead .pageTitle.page_index,
     #pageHead .pageTitle.page_menu {
         padding: 0;
     }
