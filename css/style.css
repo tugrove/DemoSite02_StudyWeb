@@ -89,6 +89,7 @@ img {
     width: 13em;
     margin: 0 auto;
     padding: 1em 0;
+    font-size: 1rem;
 }
 
 /* global navi */
@@ -138,10 +139,15 @@ img {
 
 /* p */
 #pageHead p {
-    max-width: 24em;
     margin: 0 auto;
     font-size: 1.2em;
     line-height: 1.8;
+}
+#pageHead p.page_index {
+    text-align: center;
+}
+#pageHead p.page_menu {
+    max-width: 24em;
 }
 
 /* page title padding for wide screen */
