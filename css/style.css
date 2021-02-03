@@ -70,6 +70,10 @@ img {
 #pageHead {
     background: center center / cover no-repeat;
 }
+#pageHead.page_index {
+    background-image: url(../images/index/main-bg.jpg);
+    height: 100vh;
+}
 #pageHead.page_news {
     background-image: url(../images/news/news-bg.jpg);
     background-position: 0% 0%;
