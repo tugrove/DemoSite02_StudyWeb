@@ -124,7 +124,7 @@ img {
 
 /* page title */
 #pageHead .pageTitle {
-    font-size: max(2.6em, 5.5vw);
+    font-size: min(max(10vw, 2.6em), 5em);
     font-family: 'Philosopher', sans-serif;
     font-weight: 400;
     text-align: center;
@@ -216,20 +216,29 @@ img {
 /* article title and category */
 #pageBody article .articleTitAndCat {
     order: 2;
-    margin: 0 0 0 .5em;
+    margin: .5em 0 0;
+    margin-left: min(max(3.5vw, .5em), 1em);
 }
 #pageBody article .articleTitle {
-    padding: .3em 0 0;
-    font-size: 1.4em;
+    font-size: min(max(3.5vw, 1.4em), 2em);
     font-family: 'Noto Serif JP', serif;
     font-weight: 500;
 }
 #pageBody article .articleCategory {
     margin: .5em 0 0;
 }
-#pageBody article .articleCategory * {
-    font-size: .95em;
+#pageBody article .articleCategory th,
+#pageBody article .articleCategory td {
+    font-size: min(max(2vw, .95em), 1em);
     font-weight: inherit;
+}
+
+/* article title and category for wide screen */
+@media screen and (min-width: 700px) {
+
+    #pageBody article .articleCategory {
+        margin: .1em 0 1em;
+    }
 }
 
 /* article date */
@@ -242,7 +251,8 @@ img {
     background: rgb(0, 187, 221);
     border-radius: 50%;
 }
-#pageBody article .articleDate > * {
+#pageBody article .articleMMDD,
+#pageBody article .articleYYYY {
     width: min-content;
     margin: 0 auto;
     color: rgb(255, 255, 255);
@@ -257,10 +267,9 @@ img {
     font-size: .95em;
 }
 
-/* large article top for wide screen */
+/* article date for wide screen */
 @media screen and (min-width: 500px) {
 
-    /* article date */
     #pageBody article .articleDate {
         width: 6.3em;
         height: 6.3em;
@@ -273,30 +282,6 @@ img {
     #pageBody article .articleYYYY {
         padding: .4em 0 0;
         font-size: .95em;
-    }
-}
-@media screen and (min-width: 700px) {
-
-    /* article title and category */
-    #pageBody article .articleTitAndCat {
-        margin: 0 0 0 1em;
-    }
-    #pageBody article .articleTitle {
-        padding: .2em 0 0 0;
-        font-size: 1.7em;
-    }
-    #pageBody article .articleCategory {
-        margin: .1em 0 1em;
-    }
-    #pageBody article .articleCategory * {
-        font-size: 1em;
-    }
-}
-@media screen and (min-width: 900px) {
-
-    /* article title */
-    #pageBody article .articleTitle {
-        font-size: 2em;
     }
 }
 
