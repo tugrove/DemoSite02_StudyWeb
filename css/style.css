@@ -160,13 +160,13 @@ img {
     font-weight: 400;
     text-align: center;
 }
-#pageHead .pageTitle.page_index {
+#pageHead.page_index .pageTitle {
     font-size: min(max(10vw, 1.5em), 5em);
 }
-#pageHead .pageTitle.page_news {
+#pageHead.page_news .pageTitle {
     padding: 1em 0 1.5em;
 }
-#pageHead .pageTitle.page_contact {
+#pageHead.page_contact .pageTitle {
     padding: 5vh 0 0;
     text-align: left;
 }
@@ -176,19 +176,19 @@ img {
     margin: 0 auto;
     font-size: 1.2em;
 }
-#pageHead p.page_index {
+#pageHead.page_index p {
     text-align: center;
 }
-#pageHead p.page_menu {
+#pageHead.page_menu p {
     max-width: 24em;
 }
 
-/* button for page_index */
+/* button for top page */
 #pageHead .button00.goToMenu {
     margin: 1.8em auto;
 }
 
-/* form for page_contact */
+/* form for contact page */
 #pageHead form .inputArea {
     width: 100%;
     max-width: 100%;
@@ -204,7 +204,7 @@ img {
 /* -------------------------------------------- */
 @media screen and (min-width: 550px) {
 
-    #pageHead .pageTitle.page_news {
+    #pageHead.page_news .pageTitle {
         padding: 0 0 .7em;
     }
     #pageHead form .smallInput {
@@ -226,8 +226,8 @@ img {
 }
 @media screen and (max-height: 500px) {
 
-    #pageHead .pageTitle.page_index,
-    #pageHead .pageTitle.page_menu {
+    #pageHead.page_index .pageTitle,
+    #pageHead.page_menu .pageTitle {
         padding: 0;
     }
 }
@@ -260,6 +260,24 @@ img {
 #pageBody {
     padding: 1px 0;
     background: rgb(255, 255, 255)
+}
+
+/* cyan section */
+/* -------------------------------------------- */
+
+/* Heading */
+#pageBody .cyanSection .cyanSectionHeading {
+    margin: 0 0 .77em;
+    padding: 0 .46em .5em;
+    font-size: 1.3em;
+    font-weight: inherit;
+    border-bottom: solid 2px rgb(37, 211, 241);
+}
+
+/* p */
+#pageBody .cyanSection p {
+    padding: 0 .6em;
+    line-height: 1.5em;
 }
 
 /* article */
@@ -362,74 +380,45 @@ img {
     }
 }
 
-/* cyan section */
+/* cyan section of news page */
 /* -------------------------------------------- */
 
-.cyanSection {
+#pageBody.page_news .cyanSection {
     margin: 3em auto 4em;
 }
 
-/* Heading */
-#pageBody .cyanSection .cyanSectionHeading {
-    margin: 0 0 .77em;
-    padding: 0 .46em .5em;
-    font-size: 1.3em;
-    font-weight: inherit;
-    border-bottom: solid 2px rgb(37, 211, 241);
-}
-
-/* p */
-#pageBody .cyanSection p {
-    padding: 0 .6em;
-    line-height: 1.5em;
-}
-
 /* categotyNavi */
-#pageBody .cyanSection.categoryNavi ul li {
+#pageBody.page_news .cyanSection.categoryNavi ul li {
     padding: .8em 1em;
     border-bottom: solid 1px rgb(230, 230, 230);
 }
-#pageBody .cyanSection.categoryNavi ul li:first-child {
+#pageBody.page_news .cyanSection.categoryNavi ul li:first-child {
     padding-top: 0;
 }
 
-/* info Shibuya */
-#pageBody .cyanSection.info_Shibuya {
-    margin: 1.5em 0 1em;
-}
-#pageBody .cyanSection.info_Shibuya ul {
-    padding: 0 .6em;
-    line-height: 1.8;
-}
+/* page news for wide screen */
+/* -------------------------------------------- */
 
-/* cyan section width for wide screen */
 @media screen and (min-width: 550px) {
 
-    #pageBody .cyanSection:not(.snsSyanSection) {
+    #pageBody.page_news .cyanSection {
         max-width: 14em;
     }
-    #pageBody .cyanSection .cyanSectionHeading {
+    #pageBody.page_news .cyanSection .cyanSectionHeading {
         border-bottom-width: 3px;
     }
-    #pageBody .asideFlexbox.page_news {
+    #pageBody.page_news .asideFlexbox {
         display: flex;
     }
-    #pageBody .cyanSection.info_Shibuya {
-        min-width: 14em;
-        margin: 0;
-    }
 }
-
-/* 2 columns of news page for wide screen */
-/* -------------------------------------------- */
 @media screen and (min-width: 700px) {
 
-    #pageBody .pageBodyFlexbox.page_news {
+    #pageBody.page_news .pageBodyFlexbox {
         display: flex;
         justify-content: space-between;
         gap: 1.5em;
     }
-    #pageBody .asideFlexbox.page_news {
+    #pageBody.page_news .asideFlexbox {
         display: block;
     }
 }
@@ -501,25 +490,50 @@ img {
 /* upper contents of contact page */
 /* -------------------------------------------- */
 
+/* padding */
+#pageBody #access {
+    margin: 1.5em 0 ;
+}
+
 /* iframe */
 #pageBody #access .iframeWrap {
     padding: 30em 0 0;
 }
 
-/* for wide screen */
-@media screen and (min-width: 550px) {
+/* cyan section of upper contents */
+#pageBody.page_contact #access .cyanSection {
+    margin: 0 0 1em;
+}
+#pageBody.page_contact #access .cyanSection ul {
+    padding: 0 .6em;
+    line-height: 1.8;
+}
 
-    #pageBody #access {
-        margin: 4em 0 0;
-    }
-    #pageBody .mainFlexbox {
+/* for wide screen */
+@media screen and (min-width: 800px) {
+
+    #pageBody #access.mainFlexbox {
         display: flex;
         gap: 2em;
+        margin: 4em 0;
+    }
+    #pageBody.page_contact #access .cyanSection {
+        min-width: 14em;
+        margin: 0;
+    }
+    #pageBody.page_contact #access .cyanSection .cyanSectionHeading {
+        border-bottom-width: 3px;
     }
 }
 
 /* lower contents of contact page */
 /* -------------------------------------------- */
+
+/* background */
+#pageBody .lowerContents {
+    padding: 1px 0;
+    background: rgb(250, 240, 235);
+}
 
 /* iframe */
 #pageBody #sns .iframeWrap,
@@ -531,4 +545,37 @@ img {
 }
 #pageBody #sns .twitterWrap {
     height: 20em;
+}
+
+/* cyan section of lower contents */
+#pageBody.page_contact #sns .cyanSection {
+    margin: 1em 0 3em;
+}
+
+/* for wide screen */
+@media screen and (min-width: 500px) {
+
+    #pageBody #sns.asideFlexbox {
+        display: grid;
+        gap: 2em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    #pageBody.page_contact #sns .cyanSection {
+        margin: 2em 0;
+    }
+    #pageBody.page_contact #sns .cyanSection .cyanSectionHeading {
+        border-bottom-width: 3px;
+    }
+}
+@media screen and (min-width: 800px) {
+
+    #pageBody #sns.asideFlexbox {
+        gap: min(max(4vw, 2em), 3em);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    #pageBody.page_contact #sns .cyanSection {
+        margin: 4em 0;
+    }
 }
