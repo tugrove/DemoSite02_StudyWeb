@@ -200,22 +200,43 @@ img {
     border-radius: .3em;
 }
 
-/* page title padding for wide screen */
+/* page head for wide screen */
 /* -------------------------------------------- */
 @media screen and (min-width: 550px) {
 
     #pageHead .pageTitle.page_news {
         padding: 0 0 .7em;
     }
+    #pageHead form .smallInput {
+        width: 20em;
+    }
+    #pageHead form .largeInput {
+        width: 40em;
+    }
 }
 
-/* page title padding for short screen */
+/* page head for short screen */
 /* -------------------------------------------- */
+@media screen and (max-height: 600px) {
+
+    #pageHead.page_contact {
+        height: fit-content;
+        padding-bottom: 2em;
+    }
+}
 @media screen and (max-height: 500px) {
 
     #pageHead .pageTitle.page_index,
     #pageHead .pageTitle.page_menu {
         padding: 0;
+    }
+}
+@media screen and (max-height: 400px) {
+
+    #pageHead.page_index,
+    #pageHead.page_menu {
+        height: fit-content;
+        padding-bottom: 2em;
     }
 }
 
@@ -393,6 +414,10 @@ img {
     #pageBody .asideFlexbox.page_news {
         display: flex;
     }
+    #pageBody .cyanSection.info_Shibuya {
+        min-width: 14em;
+        margin: 0;
+    }
 }
 
 /* 2 columns of news page for wide screen */
@@ -409,7 +434,7 @@ img {
     }
 }
 
-/* menu contents */
+/* menu */
 /* -------------------------------------------- */
 
 #pageBody .gridContainer {
@@ -453,13 +478,13 @@ img {
     }
 }
 
-/* page_contact */
+/* basic settings for contact page */
 /* -------------------------------------------- */
 
 /* iframe */
 #pageBody .iframeWrap {
     position: relative;
-    width: auto;
+    width: 100%;
 }
 #pageBody .iframeWrap iframe {
     position: absolute;
@@ -473,7 +498,7 @@ img {
     max-height: 100%;
 }
 
-/* page_contact upper contents */
+/* upper contents of contact page */
 /* -------------------------------------------- */
 
 /* iframe */
@@ -481,7 +506,19 @@ img {
     padding: 30em 0 0;
 }
 
-/* page_contact lower contents */
+/* for wide screen */
+@media screen and (min-width: 550px) {
+
+    #pageBody #access {
+        margin: 4em 0 0;
+    }
+    #pageBody .mainFlexbox {
+        display: flex;
+        gap: 2em;
+    }
+}
+
+/* lower contents of contact page */
 /* -------------------------------------------- */
 
 /* iframe */
