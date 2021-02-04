@@ -17,6 +17,11 @@ body {
     color: rgb(71, 49, 17);
 }
 
+/* p */
+p {
+    line-height: 1.8;
+}
+
 /* link */
 a {
     color: inherit;
@@ -170,7 +175,6 @@ img {
 #pageHead p {
     margin: 0 auto;
     font-size: 1.2em;
-    line-height: 1.8;
 }
 #pageHead p.page_index {
     text-align: center;
@@ -237,18 +241,17 @@ img {
     background: rgb(255, 255, 255)
 }
 
-/* p */
-#pageBody p {
-    margin: 1em 0;
-    line-height: 1.8;
-}
-
 /* article */
 /* -------------------------------------------- */
 
 #pageBody article {
     margin: 3em auto 4em;
     max-width: 36em;
+}
+
+/* article p */
+#pageBody article p {
+    margin: 1em 0;
 }
 
 /* article img */
@@ -347,6 +350,7 @@ img {
 
 /* Heading */
 #pageBody .cyanSection .cyanSectionHeading {
+    margin: 0 0 .77em;
     padding: 0 .46em .5em;
     font-size: 1.3em;
     font-weight: inherit;
@@ -356,6 +360,7 @@ img {
 /* p */
 #pageBody .cyanSection p {
     padding: 0 .6em;
+    line-height: 1.5em;
 }
 
 /* categotyNavi */
@@ -363,10 +368,13 @@ img {
     padding: .8em 1em;
     border-bottom: solid 1px rgb(230, 230, 230);
 }
+#pageBody .cyanSection.categoryNavi ul li:first-child {
+    padding-top: 0;
+}
 
 /* info Shibuya */
 #pageBody .cyanSection.info_Shibuya ul {
-    padding: 1em .6em;
+    padding: 0 .6em;
     line-height: 1.8;
 }
 
