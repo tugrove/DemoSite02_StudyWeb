@@ -84,21 +84,26 @@ img {
 /* page head background */
 #pageHead {
     background: center center / cover no-repeat;
+    height: 100vh;
 }
 #pageHead.page_index {
     background-image: url(../images/index/main-bg.jpg);
-    height: 100vh;
 }
 #pageHead.page_news {
     background-image: url(../images/news/news-bg.jpg);
     background-position: 0% 0%;
+    height: fit-content;
 }
 #pageHead.page_menu {
     background-image: url(../images/menu/menu-bg.jpg);
     background-color: rgb(180, 180, 180);
     background-blend-mode: overlay;
-    height: 100vh;
 }
+#pageHead.page_contact {
+    background-image: url(../images/contact/contact-bg.jpg);
+    background-color: rgb(180, 180, 180);
+    background-blend-mode: overlay;
+ }
 
 /* global head */
 /* -------------------------------------------- */
@@ -156,6 +161,10 @@ img {
 #pageHead .pageTitle.page_news {
     padding: 1em 0 1.5em;
 }
+#pageHead .pageTitle.page_contact {
+    padding: 5vh 0 0;
+    text-align: left;
+}
 
 /* p */
 #pageHead p {
@@ -170,9 +179,21 @@ img {
     max-width: 24em;
 }
 
-/* button */
+/* button for page_index */
 #pageHead .button00.goToMenu {
     margin: 1.8em auto;
+}
+
+/* form for page_contact */
+#pageHead form .inputArea {
+    width: 100%;
+    max-width: 100%;
+    max-height: 6em;
+    margin: .2em 0 .7em;
+    padding: .8em .5em;
+    background: rgba(255, 255, 255, .6);
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: .3em;
 }
 
 /* page title padding for wide screen */
