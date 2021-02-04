@@ -37,15 +37,15 @@
                 </nav>
             </section>
 
-            <section id="localHead" class="page_contact">
-                <h1 class="pageTitle page_contact">CONTACT</h1>
+            <section id="localHead">
+                <h1 class="pageTitle">CONTACT</h1>
                 <form action="./HOGE/hoge.hog" method="POST">
                     <label for="name">お名前</label> <br>
-                    <input type="text" name="name" class="inputArea" required="true"> <br>
+                    <input type="text" name="name" class="inputArea smallInput" required="true"> <br>
                     <label for="email">メールアドレス</label> <br>
-                    <input type="email" name="email" class="inputArea" required="true"> <br>
+                    <input type="email" name="email" class="inputArea smallInput" required="true"> <br>
                     <label for="message">メッセージ</label> <br>
-                    <textarea name="message" id="" class="inputArea" cols="30" rows="17" required="true"></textarea> <br>
+                    <textarea name="message" id="" class="inputArea largeInput" cols="30" rows="17" required="true"></textarea> <br>
                     <button type="submit" class="button00 sendButton">送信</button>
                 </form>
             </section>
@@ -53,12 +53,12 @@
         </div> <!-- /.contentsMaxWidth -->
     </header> <!-- /#pageHead -->
 
-    <div id="pageBody">
-        <div class="contentsMaxWidth contentsSidePadding">
-
-            <main class="upperContents">
-                <div class="mainFlexbox page_contact">
-                    <section class="cyanSection Info_Shibuya">
+    <div id="pageBody" class="page_contact">
+        
+        <main class="upperContents">
+            <div class="contentsMaxWidth contentsSidePadding">
+                <section id="access" class="mainFlexbox">
+                    <section class="cyanSection">
                         <h2 class="cyanSectionHeading">GFTD.CAFE 渋谷店</h2>
                         <ul>
                             <li>住所：東京都渋谷区</li>
@@ -72,21 +72,23 @@
                     <div class="iframeWrap">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.4624425719934!2d139.70412182922072!3d35.656072788451354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5bc514d2f1%3A0xc9d96d92aa2e457e!2z44CSMTUwLTAwMDIg5p2x5Lqs6YO95riL6LC35Yy65riL6LC377yT5LiB55uu77yS77yX4oiS77yR77yVIDZG!5e0!3m2!1sja!2sjp!4v1612324203502!5m2!1sja!2sjp" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
-                </div> <!-- /.mainFlexbox -->
-            </main> <!-- /.upperContents -->
-
-            <aside class="lowerContents">
-                <div class="asideFlexbox　page_contact">
+                </section> <!-- /#access -->
+            </div> <!-- /.contentsMaxWidth -->
+        </main> <!-- /.upperContents -->
+        
+        <aside class="lowerContents">
+            <div class="contentsMaxWidth contentsSidePadding">
+                <section id="sns" class="asideFlexbox">
                     <section class="cyanSection">
                         <h2 class="cyanSectionHeading">Facebook</h2>
                         <div class="iframeWrap">
-                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgiftedacademy.tokyo%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgiftedacademy.tokyo%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="700" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                         </div>
                     </section>
                     <section class="cyanSection">
                         <h2 class="cyanSectionHeading">Twitter</h2>
-                        <div class="iframeWrap">
-                            <a class="twitter-timeline" href="https://twitter.com/gftd_works?ref_src=twsrc%5Etfw">Tweets by gftd_works</a>
+                        <div class="twitterWrap">
+                            <a class="twitter-timeline" width="500" height="700" href="https://twitter.com/gftd_works?ref_src=twsrc%5Etfw">Tweets by gftd_works</a>
                             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </div>
                     </section>
@@ -96,13 +98,13 @@
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/S-HmZp4aOQ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </section>
-                </div> <!-- ./asideFlexbox -->
-            </aside> <!-- /.lowerContents -->
+                </section> <!-- #sns -->
+            </div> <!-- /.contentsMaxWidth -->
+        </aside> <!-- /.lowerContents -->
 
-        </div> <!-- /.contentsMaxWidth -->
     </div> <!-- /#pageBody -->
-
-    <footer id="pageFoot">
+    
+    <footer id="pageFoot" class="page_contact">
         <div class="contentsMaxWidth contentsSidePadding">
             <p id="copyright"><small>&copy; 2019 GFTD.WORKS</small></p>
         </div>
