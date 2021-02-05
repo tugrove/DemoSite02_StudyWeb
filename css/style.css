@@ -1,0 +1,574 @@
+/* stylesheet for DemoSite02_StudyWeb */
+
+/* global settings */
+/* ============================================ */
+
+/* charset */
+@charset "UTF-8";
+
+/* import font-family */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Philosopher&family=Sarabun:wght@300;400;500;600;700&display=swap');
+
+/* basic settings */
+body {
+    font-size: inherit;
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.5;
+    color: rgb(71, 49, 17);
+}
+
+/* p */
+p {
+    line-height: 1.8;
+}
+
+/* link */
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+a:hover,
+a:focus {
+    color: rgb(0, 187, 221);
+}
+
+/* button 0 */
+.button00 {
+    display: block;
+    padding: .8em 2em;
+    font-size: 1.2em;
+    color: rgb(230, 230, 230);
+    background: rgb(0, 187, 221);
+    border-radius: .3em;
+}
+.button00:hover,
+.button00:focus {
+    filter: brightness(80%);
+}
+
+/* list style */
+ul {
+    list-style: none;
+}
+
+/* img */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* max width of contents */
+.contentsMaxWidth {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/* side padding for narrow screen */
+.contentsSidePadding {
+    padding: 0 1em;
+}
+@media screen and (min-width: 980px) {
+
+    .contentsSidePadding {
+        padding: 0 max(0px, calc(1em - (100vw - 980px) / 2));
+    }
+}
+
+
+/* page header */
+/* ============================================ */
+
+/* page head background */
+#pageHead {
+    background: center center / cover no-repeat;
+    height: 100vh;
+}
+#pageHead.page_index {
+    background-image: url(../images/index/main-bg.jpg);
+}
+#pageHead.page_news {
+    background-image: url(../images/news/news-bg.jpg);
+    background-position: 0% 0%;
+    height: fit-content;
+}
+#pageHead.page_menu {
+    background-image: url(../images/menu/menu-bg.jpg);
+    background-color: rgb(180, 180, 180);
+    background-blend-mode: overlay;
+}
+#pageHead.page_contact {
+    background-image: url(../images/contact/contact-bg.jpg);
+    background-color: rgb(180, 180, 180);
+    background-blend-mode: overlay;
+}
+
+/* global head */
+/* -------------------------------------------- */
+
+/* site logo */
+#pageHead .siteLogo {
+    width: 13em;
+    margin: 0 auto;
+    padding: 1em 0;
+    font-size: 1rem;
+}
+
+/* global navi */
+#pageHead .globalNavi ul {
+    display: flex;
+    justify-content: center;
+}
+#pageHead .globalNavi ul li {
+    font-size: 1.1em;
+}
+#pageHead .globalNavi ul li:not(:last-child) {
+    margin-right: 2em;
+}
+
+/* horizontal arrangement of global head for wide screen */
+/* -------------------------------------------- */
+@media screen and (min-width: 550px) {
+
+    #pageHead #globalHead {
+        display: flex;
+        justify-content: space-between;
+    }
+    #pageHead .globalNavi {
+        padding: 2em 0;
+    }
+    #pageHead .globalNavi ul li {
+        font-size: 1.35em;
+    }
+}
+
+/* local head */
+/* -------------------------------------------- */
+
+/* page title */
+#pageHead .pageTitle {
+    padding: 15vh 0 2vh;
+    font-size: min(max(10vw, 2.6em), 5em);
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+#pageHead.page_index .pageTitle {
+    font-size: min(max(10vw, 1.5em), 5em);
+}
+#pageHead.page_news .pageTitle {
+    padding: 1em 0 1.5em;
+}
+#pageHead.page_contact .pageTitle {
+    padding: 5vh 0 0;
+    text-align: left;
+}
+
+/* p */
+#pageHead p {
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+#pageHead.page_index p {
+    text-align: center;
+}
+#pageHead.page_menu p {
+    max-width: 24em;
+}
+
+/* button for top page */
+#pageHead .button00.goToMenu {
+    margin: 1.8em auto;
+}
+
+/* form for contact page */
+#pageHead form .inputArea {
+    width: 100%;
+    max-width: 100%;
+    max-height: 6em;
+    margin: .2em 0 .7em;
+    padding: .8em .5em;
+    background: rgba(255, 255, 255, .6);
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: .3em;
+}
+
+/* page head for wide screen */
+/* -------------------------------------------- */
+@media screen and (min-width: 550px) {
+
+    #pageHead.page_news .pageTitle {
+        padding: 0 0 .7em;
+    }
+    #pageHead form .smallInput {
+        width: 20em;
+    }
+    #pageHead form .largeInput {
+        width: 40em;
+    }
+}
+
+/* page head for short screen */
+/* -------------------------------------------- */
+@media screen and (max-height: 600px) {
+
+    #pageHead.page_contact {
+        height: fit-content;
+        padding-bottom: 2em;
+    }
+}
+@media screen and (max-height: 500px) {
+
+    #pageHead.page_index .pageTitle,
+    #pageHead.page_menu .pageTitle {
+        padding: 0;
+    }
+}
+@media screen and (max-height: 400px) {
+
+    #pageHead.page_index,
+    #pageHead.page_menu {
+        height: fit-content;
+        padding-bottom: 2em;
+    }
+}
+
+
+/* page footer */
+/* ============================================ */
+
+#pageFoot {
+    color: rgb(230, 230, 230);
+    background: rgb(53, 37, 12);
+}
+#pageFoot #copyright {
+    padding: 1.8em 0;
+    text-align: center;
+}
+
+
+/* page body */
+/* ============================================ */
+
+#pageBody {
+    padding: 1px 0;
+    background: rgb(255, 255, 255)
+}
+
+/* cyan section */
+/* -------------------------------------------- */
+
+/* Heading */
+#pageBody .cyanSection .cyanSectionHeading {
+    margin: 0 0 .77em;
+    padding: 0 .46em .5em;
+    font-size: 1.3em;
+    font-weight: inherit;
+    border-bottom: solid 2px rgb(37, 211, 241);
+}
+
+/* p */
+#pageBody .cyanSection p {
+    padding: 0 .6em;
+    line-height: 1.5em;
+}
+
+/* article */
+/* -------------------------------------------- */
+
+#pageBody article {
+    margin: 3em auto 4em;
+    max-width: 36em;
+}
+
+/* article p */
+#pageBody article p {
+    margin: 1em 0;
+}
+
+/* article img */
+#pageBody article .articlePicture {
+    width: auto;
+    margin: 1.5em 0;
+}
+
+/* article top */
+/* -------------------------------------------- */
+
+#pageBody article .articleTop {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 1.5em;
+}
+
+/* article title and category */
+#pageBody article .articleTitAndCat {
+    order: 2;
+    margin: .5em 0 0;
+    margin-left: min(max(3.5vw, .5em), 1em);
+}
+#pageBody article .articleTitle {
+    font-size: min(max(3.5vw, 1.4em), 2em);
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+}
+#pageBody article .articleCategory {
+    margin: .5em 0 0;
+}
+#pageBody article .articleCategory th,
+#pageBody article .articleCategory td {
+    font-size: min(max(2vw, .95em), 1em);
+    font-weight: inherit;
+}
+
+/* article title and category for wide screen */
+@media screen and (min-width: 700px) {
+
+    #pageBody article .articleCategory {
+        margin: .1em 0 1em;
+    }
+}
+
+/* article date */
+#pageBody article .articleDate {
+    order: 1;
+    width: 5em;
+    height: 5em;
+    min-width: 5em;
+    font-family: 'Noto Serif JP', serif;
+    background: rgb(0, 187, 221);
+    border-radius: 50%;
+}
+#pageBody article .articleMMDD,
+#pageBody article .articleYYYY {
+    width: min-content;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+}
+#pageBody article .articleMMDD {
+    padding: .7em .3em 0;
+    font-size: 1.1em;
+    border-bottom: solid 1px rgb(255, 255, 255);
+}
+#pageBody article .articleYYYY {
+    padding: .1em 0 0;
+    font-size: .95em;
+}
+
+/* article date for wide screen */
+@media screen and (min-width: 500px) {
+
+    #pageBody article .articleDate {
+        width: 6.3em;
+        height: 6.3em;
+        min-width: 6.3em;
+    }
+    #pageBody article .articleMMDD {
+        padding: .5em 0 .2em;
+        font-size: 1.6em;
+    }
+    #pageBody article .articleYYYY {
+        padding: .4em 0 0;
+        font-size: .95em;
+    }
+}
+
+/* cyan section of news page */
+/* -------------------------------------------- */
+
+#pageBody.page_news .cyanSection {
+    margin: 3em auto 4em;
+}
+
+/* categotyNavi */
+#pageBody.page_news .cyanSection.cyanSectionNavi ul li {
+    padding: .8em 1em;
+    border-bottom: solid 1px rgb(230, 230, 230);
+}
+#pageBody.page_news .cyanSection.cyanSectionNavi ul li:first-child {
+    padding-top: 0;
+}
+
+/* page news for wide screen */
+/* -------------------------------------------- */
+
+@media screen and (min-width: 550px) {
+
+    #pageBody.page_news .cyanSection {
+        max-width: 14em;
+    }
+    #pageBody.page_news .cyanSection .cyanSectionHeading {
+        border-bottom-width: 3px;
+    }
+    #pageBody.page_news .asideFlexbox {
+        display: flex;
+    }
+}
+@media screen and (min-width: 700px) {
+
+    #pageBody.page_news .pageBodyFlexbox {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5em;
+    }
+    #pageBody.page_news .asideFlexbox {
+        display: block;
+    }
+}
+
+/* menu */
+/* -------------------------------------------- */
+
+#pageBody .gridContainer {
+    margin: 0 0 4em;
+}
+
+/* figure */
+#pageBody .menuContents {
+    margin: 1.5em 0;
+}
+#pageBody .menuContents .menuPicture {
+    width: auto;
+}
+#pageBody .menuContents figcaption {
+    margin: .5em 0 0;
+}
+
+/* menu contents for wide screen */
+@media screen and (min-width: 500px) {
+
+    #pageBody .gridContainer {
+        margin: 4em 0 3em;
+        display: grid;
+        gap: 1.6em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+    }
+    #pageBody .menuContents {
+        margin: 0;
+    }
+}
+@media screen and (min-width: 700px) {
+
+    #pageBody .gridContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+    #pageBody .menuContents:first-child {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    }
+}
+
+/* basic settings for contact page */
+/* -------------------------------------------- */
+
+/* iframe */
+#pageBody .iframeWrap {
+    position: relative;
+    width: 100%;
+}
+#pageBody .iframeWrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#pageBody .twitterWrap .twitter-timeline {
+    width: 100%;
+    max-height: 100%;
+}
+
+/* upper contents of contact page */
+/* -------------------------------------------- */
+
+/* padding */
+#pageBody #access {
+    margin: 1.5em 0 ;
+}
+
+/* iframe */
+#pageBody #access .iframeWrap {
+    padding: 30em 0 0;
+}
+
+/* cyan section of upper contents */
+#pageBody.page_contact #access .cyanSection {
+    margin: 0 0 1em;
+}
+#pageBody.page_contact #access .cyanSection ul {
+    padding: 0 .6em;
+    line-height: 1.8;
+}
+
+/* for wide screen */
+@media screen and (min-width: 800px) {
+
+    #pageBody #access.mainFlexbox {
+        display: flex;
+        gap: 2em;
+        margin: 4em 0;
+    }
+    #pageBody.page_contact #access .cyanSection {
+        min-width: 14em;
+        margin: 0;
+    }
+    #pageBody.page_contact #access .cyanSection .cyanSectionHeading {
+        border-bottom-width: 3px;
+    }
+}
+
+/* lower contents of contact page */
+/* -------------------------------------------- */
+
+/* background */
+#pageBody .lowerContents {
+    padding: 1px 0;
+    background: rgb(250, 240, 235);
+}
+
+/* iframe */
+#pageBody #sns .iframeWrap,
+#pageBody #sns .twitterWrap {
+    margin: 2em 0 0;
+}
+#pageBody #sns .iframeWrap {
+    padding: 20em 0 0;
+}
+#pageBody #sns .twitterWrap {
+    height: 20em;
+}
+
+/* cyan section of lower contents */
+#pageBody.page_contact #sns .cyanSection {
+    margin: 1em 0 3em;
+}
+
+/* for wide screen */
+@media screen and (min-width: 500px) {
+
+    #pageBody #sns.asideFlexbox {
+        display: grid;
+        gap: 2em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    #pageBody.page_contact #sns .cyanSection {
+        margin: 2em 0;
+    }
+    #pageBody.page_contact #sns .cyanSection .cyanSectionHeading {
+        border-bottom-width: 3px;
+    }
+}
+@media screen and (min-width: 800px) {
+
+    #pageBody #sns.asideFlexbox {
+        gap: min(max(4vw, 2em), 3em);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    #pageBody.page_contact #sns .cyanSection {
+        margin: 4em 0;
+    }
+}
