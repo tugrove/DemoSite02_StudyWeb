@@ -381,11 +381,11 @@ img {
 }
 
 /* categotyNavi */
-#pageBody.page_news .cyanSection.categoryNavi ul li {
+#pageBody.page_news .cyanSection.cyanSectionNavi ul li {
     padding: .8em 1em;
     border-bottom: solid 1px rgb(230, 230, 230);
 }
-#pageBody.page_news .cyanSection.categoryNavi ul li:first-child {
+#pageBody.page_news .cyanSection.cyanSectionNavi ul li:first-child {
     padding-top: 0;
 }
 
